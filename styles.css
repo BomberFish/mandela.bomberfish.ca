@@ -12,6 +12,7 @@ html {
     text-align: center;
     height: 100%!important;
     font-stretch: 105%;
+    font-weight: 400;
 }
 
 a,
@@ -85,7 +86,7 @@ a:hover {
   color: rgba(255,255,255,0.9);
   font-weight: 1000;
   font-stretch: 151%;
-  font-variation-settings: "GRAD" 150;
+  font-variation-settings: "GRAD" 150, 'opsz' 69420;
   font-size: 8rem;
   padding: 2%;
   z-index: -1000!important;
@@ -190,4 +191,8 @@ button:hover {
   #heart:hover{
     transition: none!important;
   }
+}
+
+#nojb {
+  font-variation-settings: "GRAD" 150;
 }
