@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760');
-
 * {
-  font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 body,
@@ -9,8 +8,10 @@ html {
     background: black !important;
     color: white;
     overflow-y: hidden!important;
+    overflow-x: scroll!important;
     text-align: center;
     height: 100%!important;
+    width: 100%!important;
     font-stretch: 105%;
     font-weight: 400;
 }
@@ -18,21 +19,21 @@ html {
 a,
 a:visited,
 a:hover {
-  color: white;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1)!important;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1)!important;
 }
 
 a:hover {
-  color: #ccccff
+    color: #ccccff
 }
 
 #heart,
 #heart:hover {
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1)!important;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1)!important;
 }
 
 #heart:hover {
-  color: red;
+    color: red;
 }
 
 #icon {
@@ -41,9 +42,9 @@ a:hover {
 
 #madeby,
 #ipadownload {
-  font-stretch: 151%;
-  font-variation-settings: "GRAD" -200;
-  font-weight: 500;
+    font-stretch: 151%;
+    font-variation-settings: "GRAD" -200;
+    font-weight: 500;
 }
 
 .container {
@@ -72,24 +73,24 @@ a:hover {
 }
 
 .h1 {
-    font-size: 6rem;
+    font-size: 10vw;
     font-weight: 175;
     font-stretch: 135%
 }
 
 .h3 {
-    font-size: 3rem;
+    font-size: 6vw;
     font-weight: 200
 }
 
 .ticker-text {
-  color: rgba(255,255,255,0.9);
-  font-weight: 1000;
-  font-stretch: 151%;
-  font-variation-settings: "GRAD" 150, 'opsz' 69420;
-  font-size: 8rem;
-  padding: 2%;
-  z-index: -1000!important;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 1000;
+    font-stretch: 151%;
+    font-variation-settings: "GRAD" 150, 'opsz' 69420;
+    font-size: 15vw;
+    padding: 2%;
+    z-index: -1000!important;
 }
 
 .top-ticker,
@@ -98,48 +99,47 @@ a:hover {
     width: 100%;
     overflow: hidden;
     padding-left: 100%;
-
 }
 
 .ticker {
-    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0.8) 2%,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 91%,rgba(0,0,0,0.8) 97%,rgba(0,0,0,1) 100%)!important;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 2%, rgba(0, 0, 0, 0) 12%, rgba(0, 0, 0, 0) 91%, rgba(0, 0, 0, 0.8) 97%, rgba(0, 0, 0, 1) 100%)!important;
     z-index: 1000;
 }
 
 .ticker-item {
-  display: inline;
-  padding: 0 2rem;
+    display: inline;
+    padding: 0 2rem;
 }
 
 button,
 button:hover {
-  background: rgb(10, 132, 255);
-  color: white;
-  font-size: 1.15rem;
-  border: 2px solid;
-  border-radius: 2rem;
-  font-weight: 100;
-  padding: 0.75rem;
-  font-size: 1.5rem;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)!important;
+    background: rgb(10, 132, 255);
+    color: white;
+    font-size: 1.15rem;
+    border: 2px solid;
+    border-radius: 2rem;
+    font-weight: 100;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)!important;
 }
 
 button {
-  border-color: black;
-  background: rgb(0, 122, 255);
-  font-stretch: 90%
+    border-color: black;
+    background: rgb(0, 122, 255);
+    font-stretch: 90%
 }
 
 button:hover {
-  border-color: rgb(10, 132, 255)!important;
-  background: rgb(10, 132, 255);
-  font-stretch: 151%;
+    border-color: rgb(10, 132, 255)!important;
+    background: rgb(10, 132, 255);
+    font-stretch: 151%;
 }
 
 .ticker-text {
     display: inline-block;
-    height: 8rem;
-    line-height: 8rem;
+    height: 17.5vw;
+    line-height: 17.5vw;
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
@@ -154,45 +154,66 @@ button:hover {
 }
 
 @-webkit-keyframes ticker {
-  0% {
-    -webkit-transform: translate3d(0%, 0, 0);
-    transform: translate3d(0%, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
+    0% {
+        -webkit-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
 }
 
 @keyframes ticker {
-  0% {
-      -webkit-transform: translate3d(0%, 0, 0);
-      transform: translate3d(0%, 0, 0);
-      visibility: visible;
-  }
-  100% {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-  }
+    0% {
+        -webkit-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
 }
 
 @media (prefers-reduced-motion) {
-  .ticker, .ticker-text {
-    display: none!important;
-  }
-  
-  a, 
-  a:hover,
-  button, 
-  button:hover,
-  #heart, 
-  #heart:hover{
-    transition: none!important;
-  }
+    .ticker,
+    .ticker-text {
+        display: none!important;
+    }
+    a,
+    a:hover,
+    button,
+    button:hover,
+    #heart,
+    #heart:hover {
+        transition: none!important;
+    }
 }
 
 #nojb {
-  font-variation-settings: "GRAD" 150;
+    font-variation-settings: "GRAD" 150;
+}
+
+#icon {
+    width: 15vw;
+    height: 15vw;
+}
+
+@media (pointer:fine) {
+    .h1 {
+        font-size: 6rem;
+    }
+    .h3 {
+        font-size: 3rem;
+        font-weight: 200
+    }
+    .ticker-text {
+      font-size: 8rem;
+    }
+    .ticker-text {
+      height: 8rem;
+      line-height: 8rem;
+    }
 }
