@@ -11,7 +11,7 @@ html {
     overflow-y: hidden!important;
     text-align: center;
     height: 100%!important;
-    font-stretch: 90%;
+    font-stretch: 105%;
 }
 
 a,
@@ -72,7 +72,7 @@ a:hover {
 
 .h1 {
     font-size: 6rem;
-    font-weight: 100;
+    font-weight: 175;
     font-stretch: 135%
 }
 
@@ -98,6 +98,12 @@ a:hover {
     overflow: hidden;
     padding-left: 100%;
 
+}
+
+@media (prefers-reduced-motion) {
+  .ticker {
+    display: none!important;
+  }
 }
 
 .ticker {
