@@ -5,7 +5,11 @@
 
 body,
 html {
-    background: black !important;
+    background-color: black !important;
+    background-image: url("hero.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto;
     color: white;
     overflow: hidden!important;
     text-align: center;
@@ -46,7 +50,7 @@ a:hover {
     font-weight: 500;
 }
 
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 5% 50% 5%;
@@ -69,6 +73,23 @@ a:hover {
     grid-area: top-ticker;
     top: 0;
     bottom: 100%
+} */
+
+.top-ticker {
+    position: fixed;
+    top: 0!important;
+}
+
+.bottom-ticker {
+    position: fixed;
+    bottom: 0!important;
+}
+
+.main-content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .h1 {
@@ -196,8 +217,8 @@ button:hover {
 }
 
 #icon {
-    width: 10%;
-    height: 10%;
+    width: 100px;
+    height: 100px;
 }
 
 @media (pointer:fine) {
