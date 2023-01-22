@@ -7,8 +7,7 @@ body,
 html {
     background: black !important;
     color: white;
-    overflow-y: hidden!important;
-    overflow-x: scroll!important;
+    overflow: hidden!important;
     text-align: center;
     height: 100%!important;
     width: 100%!important;
@@ -73,13 +72,13 @@ a:hover {
 }
 
 .h1 {
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: 175;
     font-stretch: 135%
 }
 
 .h3 {
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 200
 }
 
@@ -138,8 +137,8 @@ button:hover {
 
 .ticker-text {
     display: inline-block;
-    height: 17.5vw;
-    line-height: 17.5vw;
+    height: 15.5vw;
+    line-height: 15.5vw;
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
@@ -149,8 +148,8 @@ button:hover {
     animation-timing-function: linear;
     -webkit-animation-name: ticker;
     animation-name: ticker;
-    -webkit-animation-duration: 25s;
-    animation-duration: 25s
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s
 }
 
 @-webkit-keyframes ticker {
@@ -197,16 +196,16 @@ button:hover {
 }
 
 #icon {
-    width: 15vw;
-    height: 15vw;
+    width: 10%;
+    height: 10%;
 }
 
 @media (pointer:fine) {
     .h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 200
     }
     .ticker-text {
@@ -215,5 +214,10 @@ button:hover {
     .ticker-text {
       height: 8rem;
       line-height: 8rem;
+    }
+
+    #icon {
+        width: 10rem;
+        height: 10rem;
     }
 }
