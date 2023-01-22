@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760');
+
+* {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+body,
+html {
+    background: black !important;
+    color: white;
+    text-align: center;
+    overflow: hidden !important;
+    width: 100%!important;
+    height: 100%!important;
+    font-stretch: 90%;
+}
+
+#icon {
+    border-radius: 25%
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 50% 5%;
+    gap: 40% 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "top-ticker" "main-content" "bottom-ticker";
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+.bottom-ticker {
+    grid-area: bottom-ticker;
+    bottom: 0;
+    top: 100%;
+}
+
+.top-ticker {
+    grid-area: top-ticker;
+    top: 0;
+    bottom: 100%
+}
+
+.h1 {
+    font-size: 6rem;
+    font-weight: 100;
+    font-stretch: 135%
+}
+
+.h3 {
+    font-size: 3rem;
+    font-weight: 200
+}
+
+.ticker-text {
+  color: rgba(255,255,255,0.7);
+  font-weight: 1000;
+  font-stretch: 151%;
+  font-variation-settings: "GRAD" 150;
+  font-size: 8rem;
+  padding: 2%;
+  z-index: -1000!important;
+}
+
+.top-ticker,
+.bottom-ticker {
+    box-sizing: content-box;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 100%;
+
+}
+
+.ticker {
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0.8) 2%,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 91%,rgba(0,0,0,0.8) 97%,rgba(0,0,0,1) 100%)!important;
+    z-index: 1000;
+}
+
+.ticker-item {
+  display: inline;
+  padding: 0 2rem;
+}
+
+button,
+button:hover {
+  background: rgb(10, 132, 255);
+  color: white;
+  font-size: 1.15rem;
+  border: 2px solid;
+  border-radius: 2rem;
+  font-weight: 100;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1)!important;
+}
+
+button {
+  border-color: black;
+  background: rgb(0, 122, 255);
+  font-stretch: 90%
+}
+
+button:hover {
+  border-color: rgb(10, 132, 255)!important;
+  background: rgb(10, 132, 255);
+  font-stretch: 151%;
+}
+
+.ticker-text {
+    display: inline-block;
+    height: 8rem;
+    line-height: 8rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 25s;
+    animation-duration: 25s
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+      -webkit-transform: translate3d(0%, 0, 0);
+      transform: translate3d(0%, 0, 0);
+      visibility: visible;
+  }
+  100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+  }
+}
