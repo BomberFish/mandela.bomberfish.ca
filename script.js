@@ -4,10 +4,12 @@ console.log("Hello, World!");
 document.querySelector("#dlscreen").className = "";
 
 function showDownload() {
+  console.log("Showing downloads panel")
   document.querySelector("#dlscreen").className = "show";
 }
 
 function hideDownload() {
+  console.log("Hiding downloads panel")
   document.querySelector("#dlscreen").className = "";
 }
 // @license-end
