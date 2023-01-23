@@ -30,6 +30,16 @@ a:hover {
     color: #ccccff
 }
 
+#icon,
+#icon:hover {
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1)!important;
+    transform-origin: center center;
+}
+
+#icon:hover {
+    transform: rotate(360deg);
+}
+
 #heart,
 #heart:hover {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1)!important;
@@ -37,6 +47,7 @@ a:hover {
 
 #heart:hover {
     color: red;
+    animation: beat 5s linear 0s infinite alternate;
 }
 
 #icon {
@@ -49,6 +60,7 @@ a:hover {
     font-variation-settings: "GRAD" -200;
     font-weight: 500;
 }
+
 
 /* .container {
     display: grid;
@@ -136,7 +148,7 @@ button:hover {
     background: rgb(10, 132, 255);
     color: white;
     font-size: 1.15rem;
-    border: 2px solid;
+    border: 2px solid transparent;
     border-radius: 2rem;
     font-weight: 100;
     padding: 0.75rem;
@@ -145,15 +157,21 @@ button:hover {
 }
 
 button {
-    border-color: black;
     background: rgb(0, 122, 255);
-    font-stretch: 90%
+    font-stretch: 110%
 }
 
 button:hover {
-    border-color: rgb(10, 132, 255)!important;
     background: rgb(10, 132, 255);
     font-stretch: 151%;
+}
+
+button.destructive {
+    background: rgb(255, 59, 48);
+}
+
+button.destructive:hover {
+    background: rgb(255, 69, 58);
 }
 
 .ticker-text {
@@ -197,6 +215,20 @@ button:hover {
     }
 }
 
+@keyframes beat {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(2);
+        font-size: 1rem;
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+
 @media (prefers-reduced-motion) {
     .ticker,
     .ticker-text {
@@ -204,6 +236,7 @@ button:hover {
     }
     a,
     a:hover,
+    *,
     button,
     button:hover,
     #heart,
@@ -221,6 +254,37 @@ button:hover {
     height: 100px;
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#dlscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    z-index: 1000;
+    animation: none;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1)!important;
+}
+
+#dlscreen.show {
+    background: rgba(42,42,42,0.6);
+    -webkit-backdrop-filter: blur(5px);
+    visibility: visible;
+    backdrop-filter: blur(5px);
+}
+
 @media (pointer:fine) {
     .h1 {
         font-size: 5rem;
@@ -230,13 +294,12 @@ button:hover {
         font-weight: 200
     }
     .ticker-text {
-      font-size: 8rem;
+        font-size: 8rem;
     }
     .ticker-text {
-      height: 8rem;
-      line-height: 8rem;
+        height: 8rem;
+        line-height: 8rem;
     }
-
     #icon {
         width: 10rem;
         height: 10rem;
