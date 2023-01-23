@@ -22,6 +22,14 @@
     backdrop-filter: blur(5px);
 }
 
+#dlscreen * {
+    display: none;
+}
+
+#dlscreen.show * {
+    display: unset;
+}
+
 * {
     font-family: 'Roboto Flex', sans-serif;
 }
