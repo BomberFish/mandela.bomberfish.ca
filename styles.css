@@ -185,7 +185,8 @@ button.destructive:hover {
     -webkit-animation-name: ticker;
     animation-name: ticker;
     -webkit-animation-duration: 40s;
-    animation-duration: 40s
+    animation-duration: 40s;
+    animation-delay: -5s;
 }
 
 @-webkit-keyframes ticker {
