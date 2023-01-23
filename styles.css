@@ -15,6 +15,11 @@
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1)!important;
 }
 
+#dlwrapper {
+    margin: 2%;
+    text-align: center;
+}
+
 #dlscreen.show {
     background: rgba(42,42,42,0.6);
     -webkit-backdrop-filter: blur(5px);
@@ -166,7 +171,8 @@ button {
     font-stretch: 110%
 }
 
-button:hover {
+button:hover,
+button:active {
     background: rgb(10, 132, 255);
     font-stretch: 151%;
 }
@@ -175,7 +181,8 @@ button.destructive {
     background: rgb(255, 59, 48);
 }
 
-button.destructive:hover {
+button.destructive:hover,
+button.destructive:active {
     background: rgb(255, 69, 58);
 }
 

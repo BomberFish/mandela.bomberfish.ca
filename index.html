@@ -40,12 +40,14 @@
         </span>
     </div>
     <div id="dlscreen">
+        <div id="dlwrapper">
         <span class="h1">Install</span><br>
         <button onclick="console.log('Opening signed ver. install link');window.location.href='itms-services://?action=download-manifest&url=https://mandela.bomberfish.ca/Mandela.plist'">Enterprise signed &rsaquo;</button><br><br>
         <button onclick="console.log('Opening altstore installer link');window.location.href='altstore://install?url=https://mandela.bomberfish.ca/Mandela_Signed.ipa'">AltStore/SideStore &rsaquo;</button><br><br>
         <button onclick="console.log('Opening trollstore installer link');window.location.href='apple-magnifier://install?url=https://mandela.bomberfish.ca/Mandela_Signed.ipa'">TrollStore &rsaquo;</button><br><br>
         <span id="ipadownload">Feeling adventurous? <a href="https://nightly.link/BomberFish/Mandela/workflows/makefile/main/IPA%20Download.zip">Grab the latest development version.</a><br></span><br><br>
         <button class="destructive" onclick="hideDownload()">Close ×</button><br><br>
+    </div>
     </div>
 </body>
 <script src="script.js"></script>
